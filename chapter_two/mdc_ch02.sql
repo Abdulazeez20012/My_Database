@@ -3,7 +3,7 @@ SELECT * FROM customer;
 SELECT * FROM invoice;
 SELECT * FROM invoice_item;
 
--- B. List the LastName, FirstName, and Phone of all customers.
+-- B. List the LastName, buyers FirstName, and Phone of all customers.
 SELECT LastName, FirstName, Phone FROM customer;
 
 -- C. List the LastName, FirstName, and Phone for all customers with a FirstName of ‘Nikki’.
@@ -80,4 +80,4 @@ WHERE CustomerID IN (
     JOIN invoice_item ii ON i.InvoiceNumber = ii.InvoiceNumber
     WHERE ii.Item = 'Dress Shirt'
 )
-ORDER BY LastName ASC, FirstName DESC;
+ORDER BY LastName ASC, FirstName DESC;           
